@@ -3,10 +3,10 @@ using Microsoft.Extensions.Options;
 
 namespace Api.Infra.HttpClients
 {
-    public class FirstApiClient
+    public class SecondApiClient
     {
         public HttpClient Client { get; }
-        public FirstApiClient(HttpClient client, IOptions<FirstApiClientOptions> options)
+        public SecondApiClient(HttpClient client, IOptions<SecondApiClientOptions> options)
         {
             Client = client;
             Client.BaseAddress = new Uri(options.Value.BaseAddress!);

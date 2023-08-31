@@ -1,6 +1,6 @@
 ﻿namespace Api.Infra.Options
 {
-    public class FirstApiClientOptions
+    public class SecondApiClientOptions
     {
         public string? BaseAddress { get; set; }
         public int Timeout { get; set; } = 3;
